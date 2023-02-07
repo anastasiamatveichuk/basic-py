@@ -43,9 +43,8 @@ else:
 start = int(input("Введите результат пробежки первого дня "))
 finish = int(input("Введите общий желаемый результат "))
 result_days = 1
-result_km = start
-while result_km < finish:
-        start = start + 0.1 * start
+while start <= finish:
+        print(f"{result_days}-й день: {start}")
         result_days += 1
-        result_km = result_km + start
+        start = 1.1 * start
 print(f"Вы достигнете требуемых показателей на {result_days} день")
